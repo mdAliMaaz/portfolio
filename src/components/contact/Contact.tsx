@@ -8,7 +8,6 @@ import emailjs from "emailjs-com";
 import "./contact.scss";
 
 const Contact = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const form = useRef();
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -65,7 +64,6 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <form ref={form} onSubmit={sendEmail}>
           <input
             type='text'
