@@ -1,0 +1,79 @@
+@import '../../variables';
+
+.tech__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    >div {
+        background-color: $color-bg-variant;
+        padding: 2.4rem 5rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: $transition;
+
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $color-primary;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 2rem;
+
+            .details {
+                display: flex;
+                gap: 1rem;
+
+                .tech__icon {
+                    margin-top: 6px;
+                    color: $color-primary;
+                }
+            }
+        }
+
+        &:hover {
+            background: transparent;
+            border-color: $color-primary-variant;
+            cursor: default;
+
+        }
+    }
+}
+
+
+
+
+
+// !tables
+@media screen and (max-width: 1024px) {
+    .tech__container {
+        grid-template-columns: 1fr;
+
+        >div {
+            width: 80%;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}
+
+// !mobile
+@media screen and (max-width: 600px) {
+    .tech__container {
+        gap: 1rem;
+
+        >div {
+            width: 100%;
+            padding: 2rem 1rem;
+
+        }
+    }
+}

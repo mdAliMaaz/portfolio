@@ -5,13 +5,16 @@ import { FaGithubSquare } from "react-icons/fa";
 const Socials = () => {
   return (
     <div className='header__social'>
-      <a href='' target='_blank'>
+      <a href='https://www.linkedin.com/in/md-maaz-ba0935272/' target='_blank'>
         <AiFillLinkedin />
       </a>
-      <a href='' target='_blank'>
+      <a href='https://github.com/mdAliMaaz' target='_blank'>
         <FaGithubSquare />
       </a>
-      <a href='' target='_blank'>
+      <a
+        href='https://twitter.com/MMaaz27731?t=ll3Ksdp1RiUiVpldr8RlJg&s=08 '
+        target='_blank'
+      >
         <AiFillTwitterSquare />
       </a>
     </div>

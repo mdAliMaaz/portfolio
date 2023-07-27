@@ -1,0 +1,50 @@
+@import "../../_variables.scss";
+
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+
+    .project__item {
+        background-color: $color-bg-variant;
+        padding: 1.3rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: $transition;
+
+        h3 {
+            margin: 1.5rem 0 2 rem;
+        }
+
+        .img__container {
+            border-radius: 1.5rem;
+            overflow: hidden;
+
+
+        }
+
+        a {
+            margin-top: 1rem;
+        }
+
+        &:hover {
+            border-color: $color-primary-variant;
+            background: transparent;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .projects__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

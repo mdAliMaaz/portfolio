@@ -1,5 +1,5 @@
 import { BsAward } from "react-icons/bs";
-import { FaUsers } from "react-icons/fa";
+// import { FaUsers } from "react-icons/fa";
 import { PiFolderNotchOpenBold } from "react-icons/pi";
 
 import "./about.scss";
@@ -13,35 +13,35 @@ const About = () => {
       <div className='container about__container'>
         <div className='about__me'>
           <div className='about__me-image'>
-            <img src='/about.jpg' alt='' />
+            <img src='/about.png' alt='' />
           </div>
         </div>
         <div className='about__content'>
           <div className='about__cards'>
             <article className='about__card'>
               <BsAward className='about__icon' />
-              <h5>Experince</h5>
-              <small>1+ Years Working</small>
+              <h5>Fresher</h5>
+              {/* <h5>Experince</h5> */}
+              {/* <small>1+ Years Working</small> */}
             </article>
 
-            <article className='about__card'>
+            {/* <article className='about__card'>
               <FaUsers className='about__icon' />
               <h5>Clients</h5>
               <small>300+ Worldwide</small>
-            </article>
+            </article> */}
 
             <article className='about__card'>
               <PiFolderNotchOpenBold className='about__icon' />
               <h5>Projects</h5>
-              <small>90+ Completed</small>
+              <small>10+ Completed</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia
-            quisquam tempore vitae inventore odio, repudiandae veritatis,
-            assumenda debitis quasi voluptatibus nam, repellendus aperiam
-            aliquid ducimus. Quam doloribus eos quas?
+            I am a passionate, athletic, full stack software developer . My aim
+            is to make people's lives better & easier by developing applications
+            and websites.
           </p>
 
           <a href='#contact' className='btn btn-primary'>
