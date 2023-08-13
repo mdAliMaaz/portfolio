@@ -4,8 +4,10 @@ import { BsTelephone } from "react-icons/bs";
 
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 import "./contact.scss";
+import { slideInV2, zoomIn } from "../../motion";
 
 const Contact = () => {
   const form = useRef();
@@ -37,15 +39,27 @@ const Contact = () => {
 
       <div className='container contact__container'>
         <div className='contact__options'>
-          <article className='contact__option'>
+          {/* EMAIL */}
+          <motion.article
+            variants={slideInV2("down", "spring", 0.2, 1)}
+            initial='hidden'
+            whileInView='show'
+            className='contact__option'
+          >
             <AiOutlineMail className='contact__icon' />
             <h4>Email</h4>
             <h5>alimmazali6@gmail.com</h5>
             <a target='_blank' href='mailto:alimmazali6@gmail.com'>
               Send a Message
             </a>
-          </article>
-          <article className='contact__option'>
+          </motion.article>
+          {/* WHATS APP */}
+          <motion.article
+            variants={slideInV2("down", "spring", 0.4, 1)}
+            initial='hidden'
+            whileInView='show'
+            className='contact__option'
+          >
             <MdOutlineWhatsapp className='contact__icon' />
             <h4>WhatsApp</h4>
             <h5>91+8217683972</h5>
@@ -55,16 +69,28 @@ const Contact = () => {
             >
               Send a Message
             </a>
-          </article>
-          <article className='contact__option'>
+          </motion.article>
+          {/* PHONE */}
+          <motion.article
+            variants={slideInV2("down", "spring", 0.6, 1)}
+            initial='hidden'
+            whileInView='show'
+            className='contact__option'
+          >
             <BsTelephone className='contact__icon' />
             <h4>Phone</h4>
             <a target='_blank' href='tel:8217683972'>
               Call Me On
             </a>
-          </article>
+          </motion.article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
+        <motion.form
+          variants={zoomIn(0.5, 1.25)}
+          initial='hidden'
+          whileInView='show'
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <input
             type='text'
             name='name'
@@ -78,10 +104,15 @@ const Contact = () => {
             placeholder='Your Message'
             required
           ></textarea>
-          <button type='submit' className='btn btn-primary'>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            type='submit'
+            className='btn btn-primary'
+          >
             Send Message
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </div>
     </section>
   );

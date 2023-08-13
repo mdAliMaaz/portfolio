@@ -1,34 +1,69 @@
 export const projects = [
     {
-        image: '/project5.png',
-        title: "React Admin Dashboard",
-        href: "https://github.com/mdAliMaaz/react-admin-ui"
+        id: 1,
+        image: '/metaversus.png',
+        title: "Metaversus",
+        github: "https://github.com/mdAliMaaz/Metaversus",
+        golive: "https://metaversus-two-lilac.vercel.app/",
+        direction: 'left',
     },
     {
-        image: '/project1.png',
+        id: 2,
+        image: '/homyz.png',
+        title: "Homyz",
+        github: "https://github.com/mdAliMaaz/real-estate",
+        golive: "https://real-estate-henna-three.vercel.app/",
+        direction: 'right',
+    },
+    {
+        id: 3,
+        image: '/evogym.png',
+        title: "Evogym",
+        github: "https://github.com/mdAliMaaz/EVOGYM",
+        golive: "https://evogym-seven.vercel.app/",
+        direction: 'left',
+    },
+    {
+        id: 4,
+        image: '/hoobank.png',
+        title: "HooBank",
+        github: "https://github.com/mdAliMaaz/HooBank",
+        golive: "https://hoo-bank-virid.vercel.app/",
+        direction: 'right',
+    },
+    {
+        id: 5,
+        image: '/carhub.png',
+        title: "Carhub",
+        github: "https://github.com/mdAliMaaz/Carhub",
+        golive: "https://carhub-blond.vercel.app/",
+        direction: 'left',
+    },
+    {
+        id: 6,
+        image: '/massimo.png',
+        title: "Massimo",
+        github: "https://github.com/mdAliMaaz/restaurant-app",
+        golive: "https://restaurant-app-sage-psi.vercel.app/",
+        direction: 'right',
+    },
+    {
+        id: 7,
+        image: '/educator.png',
         title: "Educator",
-        href: "https://github.com/mdAliMaaz/Educator"
+        href: "https://github.com/mdAliMaaz/Educator",
+        golive: "https://educator-zeta.vercel.app/",
+        direction: 'left',
     },
     {
-        image: '/project2.png',
+        id: 8,
+        image: '/nike.png',
         title: "Nike Shop",
-        href: "https://github.com/mdAliMaaz/Nike-Shop"
+        href: "https://github.com/mdAliMaaz/Nike-Shop",
+        golive: "https://nike-shop-rosy.vercel.app/",
+        direction: 'right',
     },
-    {
-        image: '/project6.png',
-        title: "React Ecommerce",
-        href: "https://github.com/mdAliMaaz/React-app-ECommerce"
-    },
-    {
-        image: '/project3.png',
-        title: "Bloogy",
-        href: 'https://github.com/mdAliMaaz/bloggy-blog-website-using-Next-js-'
-    },
-    {
-        image: '/project4.png',
-        title: "inventory and Sales management system",
-        href: 'https://github.com/mdAliMaaz/FullStack-inventory-and-Sales-management-system-'
-    },
+
 ];
 
 

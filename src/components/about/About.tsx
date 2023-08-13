@@ -4,6 +4,9 @@ import { PiFolderNotchOpenBold } from "react-icons/pi";
 
 import "./about.scss";
 
+import { motion } from "framer-motion";
+import { planetVariants, textVariant2 } from "../../motion";
+
 const About = () => {
   return (
     <section id='about'>
@@ -11,11 +14,21 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className='container about__container'>
-        <div className='about__me'>
-          <div className='about__me-image'>
-            <img src='/about.png' alt='' />
-          </div>
-        </div>
+        <motion.div
+          variants={planetVariants("left")}
+          initial='hidden'
+          whileInView='show'
+          className='about__me'
+        >
+          <motion.div
+            className='about__me-image'
+            variants={textVariant2}
+            initial='hidden'
+            whileInView='show'
+          >
+            <img src='/about.png' alt='about' />
+          </motion.div>
+        </motion.div>
         <div className='about__content'>
           <div className='about__cards'>
             <article className='about__card'>
@@ -44,9 +57,14 @@ const About = () => {
             and websites.
           </p>
 
-          <a href='#contact' className='btn btn-primary'>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href='#contact'
+            className='btn btn-primary'
+          >
             Let's Talk
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

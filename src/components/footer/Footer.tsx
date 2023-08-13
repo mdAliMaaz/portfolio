@@ -4,9 +4,16 @@ import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai";
 
 import { FaGithubSquare } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+import { footerVariants } from "../../motion";
+
 const Footer = () => {
   return (
-    <footer>
+    <motion.footer
+      variants={footerVariants}
+      initial='hidden'
+      whileInView='show'
+    >
       <a href='#' className='footer__logo'>
         MAAZ.
       </a>
@@ -45,7 +52,7 @@ const Footer = () => {
           <FaGithubSquare className='footer__social' />
         </a>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

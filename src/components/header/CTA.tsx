@@ -1,12 +1,34 @@
+import { motion } from "framer-motion";
+import { textVariant2 } from "../../motion";
+
 const CTA = () => {
   return (
     <div className='cta'>
-      <a href='/resume.pdf' download className='btn'>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        variants={textVariant2}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false }}
+        href='/resume.pdf'
+        download
+        className='btn'
+      >
         Download CV
-      </a>
-      <a href='#contact' className='btn btn-primary'>
+      </motion.a>
+      <motion.a
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        variants={textVariant2}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false }}
+        href='#contact'
+        className='btn btn-primary'
+      >
         Let's Talk
-      </a>
+      </motion.a>
     </div>
   );
 };

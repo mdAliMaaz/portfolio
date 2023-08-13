@@ -34,6 +34,10 @@
     }
 }
 
+.btn__container {
+    display: flex;
+    gap: 2rem;
+}
 
 @media screen and (max-width: 1024px) {
     .projects__container {

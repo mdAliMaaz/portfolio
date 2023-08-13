@@ -16,11 +16,13 @@
         place-items: center;
 
 
+
         .about__me-image {
             border-radius: 2rem;
             overflow: hidden;
             transform: rotate(10deg);
             transition: $transition;
+
 
             &:hover {
                 transform: rotate(0deg);
@@ -96,10 +98,14 @@
 
 @media screen and (max-width: 600px) {
 
+
+
     .about__me {
         display: none;
         width: 65%;
         margin: 0 auto 3rem;
+
+
     }
 
     .about__cards {

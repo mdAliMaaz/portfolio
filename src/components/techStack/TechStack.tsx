@@ -2,6 +2,9 @@ import "./techstack.scss";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { frontend, backend } from "../../data";
 
+import { motion } from "framer-motion";
+import { zoomIn } from "../../motion";
+
 const TechStack = () => {
   return (
     <section id='techStack'>
@@ -11,7 +14,12 @@ const TechStack = () => {
       <div className='container tech__container'>
         <div className='front-end'>
           <h3>Frontend Development</h3>
-          <div className='content'>
+          <motion.div
+            variants={zoomIn(0.5, 1)}
+            initial='hidden'
+            whileInView='show'
+            className='content'
+          >
             {frontend.map((item) => (
               <article className='details' key={item.skill}>
                 <BsFillPatchCheckFill className='tech__icon' />
@@ -21,11 +29,16 @@ const TechStack = () => {
                 </div>
               </article>
             ))}
-          </div>
+          </motion.div>
         </div>
         <div className='back-end'>
           <h3>Backend Development</h3>
-          <div className='content'>
+          <motion.div
+            variants={zoomIn(0.5, 1)}
+            initial='hidden'
+            whileInView='show'
+            className='content'
+          >
             {backend.map((item) => (
               <article className='details' key={item.skill}>
                 <BsFillPatchCheckFill className='tech__icon' />
@@ -35,7 +48,7 @@ const TechStack = () => {
                 </div>
               </article>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
