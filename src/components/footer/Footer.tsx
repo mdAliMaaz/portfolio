@@ -15,7 +15,7 @@ const Footer = () => {
       whileInView='show'
     >
       <a href='#' className='footer__logo'>
-        MAAZ.
+        {"<"}MAAZ{"/>"}
       </a>
 
       <ul>

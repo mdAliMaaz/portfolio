@@ -99,21 +99,21 @@ export const textContainer = {
     }),
 };
 // MINE
-export const textContainerV2 = (delay: number, direction: string) => ({
-    hidden: {
-        x: direction === 'left' ? '-50%' : direction === 'right' ? '50%' : 0,
-        opacity: 0,
-    },
-    show: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            type: 'spring',
-            duration: 1.25,
-            delay
-        },
-    }
-});
+// export const textContainerV2 = (delay: number, direction: string) => ({
+//     hidden: {
+//         x: direction === 'left' ? '-50%' : direction === 'right' ? '50%' : 0,
+//         opacity: 0,
+//     },
+//     show: {
+//         x: 0,
+//         opacity: 1,
+//         transition: {
+//             type: 'spring',
+//             duration: 1.25,
+//             delay
+//         },
+//     }
+// });
 
 
 
@@ -152,18 +152,18 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
     },
 });
 
-export const planetVariants = (direction: string) => ({
+export const planetVariants = (direction: string, delay: number) => ({
     hidden: {
-        x: direction === 'left' ? '-100%' : '100%',
-        rotate: 120,
+        y: direction === 'left' ? '-50%' : '50%',
+        opacity: 0
     },
     show: {
-        x: 0,
-        rotate: 0,
+        y: 0,
+        opacity: 1,
         transition: {
-            type: 'spring',
-            duration: 1.8,
-            delay: 0.5,
+            type: 'tween',
+            duration: 1,
+            delay
         },
     },
 });

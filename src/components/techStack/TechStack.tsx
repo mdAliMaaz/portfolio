@@ -9,7 +9,9 @@ const TechStack = () => {
   return (
     <section id='techStack'>
       <h5>What Skills I Have</h5>
-      <h2>My Tech Stack</h2>
+      <h2>
+        {"<"}MyTechStack{"/>"}
+      </h2>
 
       <div className='container tech__container'>
         <div className='front-end'>

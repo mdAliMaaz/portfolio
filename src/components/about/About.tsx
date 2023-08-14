@@ -5,17 +5,19 @@ import { PiFolderNotchOpenBold } from "react-icons/pi";
 import "./about.scss";
 
 import { motion } from "framer-motion";
-import { planetVariants, textVariant2 } from "../../motion";
+import { fadeIn, textVariant2 } from "../../motion";
 
 const About = () => {
   return (
     <section id='about'>
       <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h2>
+        {"<"}About Me{"/>"}
+      </h2>
 
       <div className='container about__container'>
         <motion.div
-          variants={planetVariants("left")}
+          variants={fadeIn("right", "spring", 0.5, 1)}
           initial='hidden'
           whileInView='show'
           className='about__me'

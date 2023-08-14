@@ -24,10 +24,14 @@ html {
 body {
 
   font-family: 'Poppins', sans-serif;
-  background-color: $color-bg;
+
+  background: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+
   color: $color-white;
   line-height: 1.7;
-  background-image: url('/bg.png');
   overflow-x: auto;
 }
 

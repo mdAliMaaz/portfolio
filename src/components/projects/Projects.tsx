@@ -2,17 +2,19 @@ import "./projects.scss";
 
 import { projects } from "../../data";
 import { motion } from "framer-motion";
-import { textContainerV2 } from "../../motion";
+import { planetVariants } from "../../motion";
 
 const Projects = () => {
   return (
     <section id='projects'>
       <h5>My Projects</h5>
-      <h2>Projects</h2>
+      <h2>
+        {"<"}Projects{"/>"}
+      </h2>
       <div className='container projects__container'>
-        {projects.map((item, i) => (
+        {projects.map((item) => (
           <motion.article
-            variants={textContainerV2(i * 0.2, item.direction)}
+            variants={planetVariants(item.direction, 0.4)}
             initial='hidden'
             whileInView='show'
             key={item.id}
