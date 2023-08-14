@@ -6,6 +6,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/Metaversus",
         golive: "https://metaversus-two-lilac.vercel.app/",
         direction: 'left',
+        tech: ["Nextjs", "tailwind", ]
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/real-estate",
         golive: "https://real-estate-henna-three.vercel.app/",
         direction: 'right',
+        tech: ["Reactjs", "Css", "JavaScript"]
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/EVOGYM",
         golive: "https://evogym-seven.vercel.app/",
         direction: 'left',
+        tech: ["Reactjs", "tailwind",]
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/HooBank",
         golive: "https://hoo-bank-virid.vercel.app/",
         direction: 'right',
+        tech: ["Nextjs", "tailwind", "JavaScript"]
     },
     {
         id: 5,
@@ -38,6 +42,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/Carhub",
         golive: "https://carhub-blond.vercel.app/",
         direction: 'left',
+        tech: ["Nextjs", "tailwind", "TypeScript"]
     },
     {
         id: 6,
@@ -46,6 +51,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/restaurant-app",
         golive: "https://restaurant-app-sage-psi.vercel.app/",
         direction: 'right',
+        tech: ["Nextjs", "tailwind", "TypeScript"]
     },
     {
         id: 7,
@@ -54,6 +60,7 @@ export const projects = [
         href: "https://github.com/mdAliMaaz/Educator",
         golive: "https://educator-zeta.vercel.app/",
         direction: 'left',
+        tech: ["HTML", "CSS", ]
     },
     {
         id: 8,
@@ -62,6 +69,7 @@ export const projects = [
         href: "https://github.com/mdAliMaaz/Nike-Shop",
         golive: "https://nike-shop-rosy.vercel.app/",
         direction: 'right',
+        tech: ["HTML", "CSS", "JavaScript"]
     },
 
 ];

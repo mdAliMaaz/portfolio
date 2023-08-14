@@ -17,6 +17,7 @@ const Projects = () => {
             variants={planetVariants(item.direction, 0.4)}
             initial='hidden'
             whileInView='show'
+            viewport={{ once: true }}
             key={item.id}
             className='project__item'
           >
@@ -43,6 +44,11 @@ const Projects = () => {
               >
                 Go Live
               </motion.a>
+            </div>
+            <div className='hashtag'>
+              {item.tech.map((item2) => (
+                <span>{`#${item2}`}</span>
+              ))}
             </div>
           </motion.article>
         ))}

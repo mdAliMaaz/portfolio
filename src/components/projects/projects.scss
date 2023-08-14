@@ -39,10 +39,41 @@
     gap: 2rem;
 }
 
+.hashtag {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+
+    span {
+        border-radius: 5px;
+        padding: 4px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: capitalize;
+        cursor: pointer;
+        background-color: #ff3e00;
+        color: white;
+    }
+}
+
+
+
+
 @media screen and (max-width: 1024px) {
     .projects__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
+    }
+
+    .hashtag {
+        gap: .2rem;
+
+        span {
+            padding: 2px 6px;
+            font-weight: normal;
+        }
     }
 }
 

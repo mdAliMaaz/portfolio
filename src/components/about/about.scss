@@ -11,25 +11,18 @@
         width: 100%;
         aspect-ratio: 1/1;
         border-radius: 2rem;
-        background: linear-gradient(45deg, transparent, $color-primary, transparent);
-        display: grid;
-        place-items: center;
-
-
 
         .about__me-image {
             border-radius: 2rem;
             overflow: hidden;
-            transform: rotate(10deg);
             transition: $transition;
+            filter: invert(55%) sepia(91%) saturate(1249%) hue-rotate(150deg) brightness(106%) contrast(105%);
 
-
-            &:hover {
-                transform: rotate(0deg);
-            }
         }
     }
 }
+
+
 
 .about__cards {
     display: grid;
@@ -85,8 +78,7 @@
     .about__me {
         width: 50%;
         margin: 2rem auto 4rem;
-        display: none;
-
+        z-index: 100;
     }
 
     .about__content {
@@ -101,7 +93,6 @@
 
 
     .about__me {
-        display: none;
         width: 65%;
         margin: 0 auto 3rem;
 

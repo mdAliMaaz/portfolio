@@ -1,11 +1,9 @@
 import { BsAward } from "react-icons/bs";
-// import { FaUsers } from "react-icons/fa";
 import { PiFolderNotchOpenBold } from "react-icons/pi";
 
 import "./about.scss";
 
 import { motion } from "framer-motion";
-import { fadeIn, textVariant2 } from "../../motion";
 
 const About = () => {
   return (
@@ -16,21 +14,16 @@ const About = () => {
       </h2>
 
       <div className='container about__container'>
-        <motion.div
-          variants={fadeIn("right", "spring", 0.5, 1)}
-          initial='hidden'
-          whileInView='show'
-          className='about__me'
-        >
-          <motion.div
-            className='about__me-image'
-            variants={textVariant2}
-            initial='hidden'
-            whileInView='show'
-          >
-            <img src='/about.png' alt='about' />
-          </motion.div>
-        </motion.div>
+        <div className='about__me'>
+          <div className='about__me-image'>
+            <motion.img
+              animate={{ opacity: [0, 1, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
+              src='/fullstack.svg'
+              alt='about'
+            />
+          </div>
+        </div>
         <div className='about__content'>
           <div className='about__cards'>
             <article className='about__card'>
