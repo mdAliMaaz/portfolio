@@ -24,11 +24,9 @@ html {
 body {
 
   font-family: 'Poppins', sans-serif;
-
-  background: linear-gradient(144.39deg,
-      #ffffff -278.56%,
-      #6d6d6d -78.47%,
-      #11101d 91.61%);
+  background: linear-gradient(135deg, #0a0a2a, #110f3c, #1a1650, #261f65, #31297b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
 
   color: $color-white;
   line-height: 1.7;
@@ -137,5 +135,20 @@ img {
 
   section>h2 {
     margin-bottom: 2rem;
+  }
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }

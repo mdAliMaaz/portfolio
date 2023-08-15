@@ -1,43 +1,59 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
-
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+import { zoomIn } from "../../motion";
+import { toast, ToastContainer } from "react-toastify";
 
 import "./contact.scss";
-import { slideInV2, zoomIn } from "../../motion";
+import "react-toastify/dist/ReactToastify.css";
+import "./toast.scss";
 
 const Contact = () => {
   const form = useRef();
-
+  const [loading, setLoading] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sendEmail = (e: any) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_0e1y29m",
-        "template_8wzs9vm",
-        form.current!,
-        "Fth0EzPIs0iVJBV5j"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    try {
+      setLoading(true);
+      emailjs
+        .sendForm(
+          "service_0e1y29m",
+          "template_8wzs9vm",
+          form.current!,
+          "Fth0EzPIs0iVJBV5j"
+        )
+        .then(
+          (result) => success(),
+          (err) => error()
+        );
+    } catch (error) {
+      console.log(error);
+    }
   };
+  const success = () => {
+    setLoading(false);
+    toast.success("message sent successfully", {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+      className: "custom-toast", // Apply your custom toast style
+    });
+  };
+  const error = () => {
+    toast.error("Somthing went Wrong try again ", {
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 3000,
+      className: "custom-toast", // Apply your custom toast style
+    });
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
-      <h2>
-        {"<"}Contact Me{"/>"}
-      </h2>
+      <h2>{loading ? " <Loading.../>" : `<Contact/>`}</h2>
 
       <div className='container contact__container'>
         <motion.div
@@ -80,6 +96,7 @@ const Contact = () => {
           variants={zoomIn(0.5, 1)}
           initial='hidden'
           whileInView='show'
+          viewport={{ once: true }}
           ref={form}
           onSubmit={sendEmail}
         >
@@ -106,6 +123,7 @@ const Contact = () => {
           </motion.button>
         </motion.form>
       </div>
+      <ToastContainer className='custom-toast-container' />
     </section>
   );
 };

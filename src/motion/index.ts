@@ -20,11 +20,28 @@ export const navVariants = {
     },
 };
 
-
-export const imageVariants = {
-
-
+export const headerVarients = {
+    hidden: {
+        opacity: 0,
+        y: 100,
+        transition: {
+            type: 'spring',
+            stiffness: 300,
+            damping: 140,
+        },
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: 'tween',
+            stiffness: 80,
+            delay: 0.5,
+        },
+    },
 };
+
+
 
 export const slideIn = (direction: string, type: string, delay: number, duration: number) => ({
     hidden: {

@@ -39,27 +39,36 @@
     gap: 2rem;
 }
 
-.hashtag {
+.hashtags {
     margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 1rem;
 
-    span {
+    div {
         border-radius: 5px;
         padding: 4px 8px;
         font-size: 12px;
         font-weight: bold;
         text-transform: capitalize;
         cursor: pointer;
-        background-color: #ff3e00;
         color: white;
+        font-weight: 600;
+    }
+
+    .hashtag0 {
+        background-color: #ff3e00;
+    }
+
+    .hashtag1 {
+        background-color: #22c55e;
+    }
+
+    .hashtag2 {
+        background-color: #ffcb2b;
     }
 }
-
-
-
 
 @media screen and (max-width: 1024px) {
     .projects__container {

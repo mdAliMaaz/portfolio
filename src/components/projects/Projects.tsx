@@ -45,9 +45,9 @@ const Projects = () => {
                 Go Live
               </motion.a>
             </div>
-            <div className='hashtag'>
-              {item.tech.map((item2) => (
-                <span>{`#${item2}`}</span>
+            <div className='hashtags'>
+              {item.tech.map((item2, i) => (
+                <div className={`hashtag${i}`} key={item + "_" + i}>{`#${item2}`}</div>
               ))}
             </div>
           </motion.article>

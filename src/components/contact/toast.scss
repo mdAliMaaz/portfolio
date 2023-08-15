@@ -1,0 +1,27 @@
+/* CustomToastStyles.css */
+.custom-toast-container {
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-toast {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.custom-close-button {
+    font-size: 18px;
+    color: #fff;
+}
+
+.custom-success-toast {
+    background-color: #4caf50;
+}
+
+.custom-error-toast {
+    background-color: #f44336;
+}

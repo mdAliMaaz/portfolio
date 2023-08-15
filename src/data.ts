@@ -6,7 +6,7 @@ export const projects = [
         github: "https://github.com/mdAliMaaz/Metaversus",
         golive: "https://metaversus-two-lilac.vercel.app/",
         direction: 'left',
-        tech: ["Nextjs", "tailwind", ]
+        tech: ["Nextjs", "tailwind",]
     },
     {
         id: 2,
@@ -60,7 +60,7 @@ export const projects = [
         href: "https://github.com/mdAliMaaz/Educator",
         golive: "https://educator-zeta.vercel.app/",
         direction: 'left',
-        tech: ["HTML", "CSS", ]
+        tech: ["HTML", "CSS",]
     },
     {
         id: 8,
@@ -91,31 +91,31 @@ export const frontend = [
     },
     {
         skill: "REACT JS",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "REDUX",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "NEXT JS",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "SCSS",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "TAILWIND",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "BOOTSTRAP",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "TYPESCRIPT",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
 ]
 
@@ -123,38 +123,38 @@ export const frontend = [
 export const backend = [
     {
         skill: "NODE JS",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "MONGODB",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "SQL",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "EXPRESS JS",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "POSTMAN",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "ASP.NET",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "JAVA",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "C#",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
     {
         skill: "GITHUB",
-        exp: "intermediate"
+        exp: "Intermediate"
     },
 ]
