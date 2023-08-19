@@ -2,7 +2,6 @@ import "./projects.scss";
 
 import { projects } from "../../data";
 import { motion } from "framer-motion";
-import { planetVariants } from "../../motion";
 
 const Projects = () => {
   return (
@@ -13,14 +12,7 @@ const Projects = () => {
       </h2>
       <div className='container projects__container'>
         {projects.map((item) => (
-          <motion.article
-            variants={planetVariants(item.direction, 0.4)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: true }}
-            key={item.id}
-            className='project__item'
-          >
+          <article key={item.id} className='project__item'>
             <div className='img__container'>
               <img src={item.image} alt='project_img' />
             </div>
@@ -47,10 +39,13 @@ const Projects = () => {
             </div>
             <div className='hashtags'>
               {item.tech.map((item2, i) => (
-                <div className={`hashtag${i}`} key={item + "_" + i}>{`#${item2}`}</div>
+                <div
+                  className={`hashtag${i}`}
+                  key={item + "_" + i}
+                >{`#${item2}`}</div>
               ))}
             </div>
-          </motion.article>
+          </article>
         ))}
       </div>
     </section>

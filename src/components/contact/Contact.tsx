@@ -43,6 +43,7 @@ const Contact = () => {
     });
   };
   const error = () => {
+    setLoading(false);
     toast.error("Somthing went Wrong try again ", {
       position: toast.POSITION.TOP_RIGHT,
       autoClose: 3000,
@@ -60,19 +61,28 @@ const Contact = () => {
           variants={zoomIn(0.5, 1)}
           initial='hidden'
           whileInView='show'
+          viewport={{ once: true }}
           className='contact__options'
         >
           {/* EMAIL */}
-          <article className='contact__option'>
+          <a
+            href='mailto:alimmazali6@gmail.com'
+            target='_blank'
+            className='contact__option'
+          >
             <AiOutlineMail className='contact__icon' />
             <h4>Email</h4>
-            <h5>alimmazali6@gmail.com</h5>
+            <h5>alimaazali6@gmail.com</h5>
             <a target='_blank' href='mailto:alimmazali6@gmail.com'>
               Send a Message
             </a>
-          </article>
+          </a>
           {/* WHATS APP */}
-          <article className='contact__option'>
+          <a
+            href='https://api.whatsapp.com/send?phone=8217682972'
+            target='_blank'
+            className='contact__option'
+          >
             <MdOutlineWhatsapp className='contact__icon' />
             <h4>WhatsApp</h4>
             <h5>91+8217683972</h5>
@@ -82,15 +92,15 @@ const Contact = () => {
             >
               Send a Message
             </a>
-          </article>
+          </a>
           {/* PHONE */}
-          <article className='contact__option'>
+          <a href='tel:8217683972' target='_blank' className='contact__option'>
             <BsTelephone className='contact__icon' />
             <h4>Phone</h4>
             <a target='_blank' href='tel:8217683972'>
               Call Me On
             </a>
-          </article>
+          </a>
         </motion.div>
         <motion.form
           variants={zoomIn(0.5, 1)}
@@ -119,7 +129,7 @@ const Contact = () => {
             type='submit'
             className='btn btn-primary'
           >
-            Send Message
+            {loading ? "<Loading/>" : "Send Message"}
           </motion.button>
         </motion.form>
       </div>
