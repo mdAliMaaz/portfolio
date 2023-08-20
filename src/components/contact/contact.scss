@@ -1,4 +1,3 @@
-@import '../../variables';
 
 .container.contact__container {
     width: 58%;
@@ -15,12 +14,12 @@
 }
 
 .contact__option {
-    background-color: $color-bg-variant;
+    background-color: var(--secondary);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: 1px solid transparent;
-    transition: $transition;
+    border: 1px solid var(--transparent);
+    transition: var(--transition);
 
 
     a {
@@ -30,8 +29,8 @@
     }
 
     &:hover {
-        background-color: transparent;
-        border-color: $color-bg-variant;
+        background-color: var(--transparent);
+        border-color: var(--secondary);
     }
 }
 
@@ -50,10 +49,15 @@ form {
         width: 100%;
         padding: 1.5rem;
         border-radius: .5rem;
-        background: transparent;
-        border: 2px solid $color-bg-variant;
+        background: var(--transparent);
+        border: 2px solid var(--secondary);
         resize: none;
-        color: $color-white;
+        color: var(--text);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--text);
     }
 }
 
@@ -70,6 +74,6 @@ form {
 // !MOBILE
 @media screen and (max-width: 600px) {
     .container.contact__container {
-        width: $container-width-sm;
+        width: var(--container-width-sm);
     }
 }

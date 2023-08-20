@@ -1,9 +1,6 @@
-@import '../../variables.scss';
-
 header {
     margin-top: 2rem;
     height: 100vh;
-    // padding-top: 5rem;
     overflow: hidden;
 
 
@@ -35,7 +32,7 @@ header {
         content: "";
         width: 1px;
         height: 2rem;
-        background: $color-primary;
+        background: var(--primary);
     }
 
 
@@ -43,7 +40,7 @@ header {
 }
 
 .me {
-    background: linear-gradient($color-primary, transparent);
+    background: linear-gradient(var(--primary), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;

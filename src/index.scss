@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 
-@import './variables.scss';
+
+:root {
+  --text: hsl(153, 82%, 2%);
+  --background: hsl(158, 87%, 94%);
+  --primary: hsl(157, 87%, 64%);
+  --secondary: hsl(157, 87%, 94%);
+  --accent: hsl(157, 87%, 24%);
+  --transparent: hsl(157, 87%, 64%);
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
+}
+
+
+
+[data-theme="dark"] {
+  --text: hsl(158, 87%, 94%);
+  --background: hsl(153, 82%, 2%);
+  --primary: hsl(157, 87%, 64%);
+  --secondary: hsl(157, 86%, 14%);
+  --accent: hsl(157, 87%, 54%);
+  --transparent: transparent;
+}
 
 * {
   margin: 0;
@@ -21,22 +45,24 @@ html {
   display: none;
 }
 
+
+
 body {
 
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0a0a2a, #110f3c, #1a1650, #261f65, #31297b);
+  background: var(--background);
   background-size: 400% 400%;
-  animation: gradientAnimation 20s ease infinite;
-
-  color: $color-white;
+  color: var(--text);
   line-height: 1.7;
   overflow-x: auto;
+
+
 }
 
 // ! GENERAL STYLES
 
 .container {
-  width: $container-width-lg;
+  width: var(--container-width-lg);
   margin: 0 auto;
 }
 
@@ -57,30 +83,29 @@ section {
 
   h2 {
     text-align: center;
-    color: $color-light;
+    color: var(--text);
   }
 
   h5 {
     text-align: center;
-    color: $color-light;
+    color: var(--text);
   }
 
   h2 {
-    color: $color-primary;
+    color: var(--primary);
     margin-bottom: 3rem;
   }
 }
 
 .text-light {
-  color: $color-light;
+  color: var(--text);
 }
 
 a {
-  color: $color-primary;
-  transition: $transition;
+  color: var(--primary);
 
   &:hover {
-    color: $color-white;
+    color: var(--accent);
   }
 }
 
@@ -88,16 +113,16 @@ a {
 .btn {
   width: max-content;
   display: inline-block;
-  color: $color-primary;
+  color: var(--primary);
   padding: .75rem 1.2rem;
   border-radius: .4rem;
   cursor: pointer;
-  border: 1px solid $color-primary;
-  transition: $transition;
+  border: 1px solid var(--primary);
+  transition: var(--transition);
 
   &:hover {
-    background-color: $color-white;
-    color: $color-bg;
+    background-color: var(--background);
+    color: var(--text);
     border-color: transparent;
   }
 }
@@ -105,21 +130,21 @@ a {
 
 
 .btn-primary {
-  background-color: $color-primary;
-  color: $color-bg;
+  background-color: var(--primary);
+  color: var(--background);
 }
 
 img {
   display: block;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 // !TABLETS
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: $container-width-md;
+    width: var(--container-width-md);
   }
 
   section {
@@ -130,7 +155,7 @@ img {
 // !MOBILE
 @media screen and (max-width: 600px) {
   .container {
-    width: $container-width-sm;
+    width: var(--container-width-sm);
   }
 
   section>h2 {

@@ -1,7 +1,5 @@
-@import '../../variables';
-
 footer {
-    background-color: $color-primary;
+    background-color: var(--primary);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -10,7 +8,7 @@ footer {
 
 
     a {
-        color: $color-bg;
+        color: var(--background);
     }
 
 
@@ -37,18 +35,18 @@ footer {
     margin-bottom: 4rem;
 
     a {
-        background: $color-bg;
-        color: $color-white;
+        background: var(--background);
+        color: var(--text);
         padding: 0.8rem;
         border-radius: .7rem;
         display: flex;
         border: 1px solid transparent;
-        transition: $transition;
+        transition: var(--transition);
 
         &:hover {
             background: transparent;
-            color: $color-bg;
-            border-color: $color-bg;
+            color: var(--background);
+            border-color: var(--background);
         }
     }
 }

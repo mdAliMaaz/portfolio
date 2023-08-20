@@ -4,15 +4,14 @@ import { PiFolderNotchOpenBold } from "react-icons/pi";
 import "./about.scss";
 
 import { motion } from "framer-motion";
-import { headerVarients } from "../../motion";
 
 const About = () => {
   return (
     <section id='about'>
       <h5>Get To Know</h5>
-      <motion.h2 variants={headerVarients} initial='hidden' whileInView='show'>
+      <h2>
         {"<"}About Me{"/>"}
-      </motion.h2>
+      </h2>
 
       <div className='container about__container'>
         <div className='about__me'>
@@ -59,7 +58,7 @@ const About = () => {
             href='#contact'
             className='btn btn-primary'
           >
-            Let's Talk
+            Say Hi
           </motion.a>
         </div>
       </div>

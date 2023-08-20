@@ -4,12 +4,14 @@ import Socials from "./Socials";
 
 import "./header.scss";
 import { navVariants, fadeIn } from "../../motion";
+import DarkMode from "../darkmode/DarkMode";
 
 const Header = () => {
   return (
     <header>
       <div className='container header__container'>
         <h5>Hello I'M</h5>
+        <DarkMode />
         <motion.h1 variants={navVariants} initial='hidden' whileInView='show'>
           Mohammed Ali Maaz
         </motion.h1>

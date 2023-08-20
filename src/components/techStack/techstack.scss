@@ -1,22 +1,20 @@
-@import '../../variables';
-
 .tech__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
     >div {
-        background-color: $color-bg-variant;
+        background-color: var(--secondary);
         padding: 2.4rem 5rem;
         border-radius: 2rem;
-        border: 1px solid transparent;
-        transition: $transition;
+        border: 1px solid var(--transparent);
+        transition: var(--transition);
 
 
         h3 {
             text-align: center;
             margin-bottom: 2rem;
-            color: $color-primary;
+            color: var(--primary);
         }
 
         .content {
@@ -30,14 +28,14 @@
 
                 .tech__icon {
                     margin-top: 6px;
-                    color: $color-primary;
+                    color: var(--primary);
                 }
             }
         }
 
         &:hover {
-            background: transparent;
-            border-color: $color-primary-variant;
+            background: var(--transparent);
+            border-color: var(--accent);
             cursor: default;
 
         }

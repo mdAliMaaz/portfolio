@@ -1,16 +1,14 @@
-@import "../../_variables.scss";
-
 .projects__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 
     .project__item {
-        background-color: $color-bg-variant;
+        background-color: var(--secondary);
         padding: 1.3rem;
         border-radius: 2rem;
-        border: 1px solid transparent;
-        transition: $transition;
+        border: 1px solid var(--transparent);
+        transition: var(--transition);
 
         h3 {
             margin: 1.5rem 0 2 rem;
@@ -28,8 +26,8 @@
         }
 
         &:hover {
-            border-color: $color-primary-variant;
-            background: transparent;
+            border-color: var(--accent);
+            background: var(--transparent);
         }
     }
 }
