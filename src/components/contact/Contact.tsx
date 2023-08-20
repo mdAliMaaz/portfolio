@@ -97,6 +97,7 @@ const Contact = () => {
           <a href='tel:8217683972' target='_blank' className='contact__option'>
             <BsTelephone className='contact__icon' />
             <h4>Phone</h4>
+            <h5>91+8217683972</h5>
             <a target='_blank' href='tel:8217683972'>
               Call Me On
             </a>
