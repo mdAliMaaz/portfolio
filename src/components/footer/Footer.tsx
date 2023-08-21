@@ -37,7 +37,7 @@ const Footer = () => {
       </ul>
       <div className='footer__details'>
         <a
-          href='https://www.linkedin.com/in/md-maaz-ba0935272/'
+          href='https://www.linkedin.com/in/mohammad-ali-maaz-79b637289/'
           target='_black'
         >
           <AiFillLinkedin className='footer__social' />
