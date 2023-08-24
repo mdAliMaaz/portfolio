@@ -37,15 +37,12 @@ const Footer = () => {
       </ul>
       <div className='footer__details'>
         <a
-          href='https://www.linkedin.com/in/mohammad-ali-maaz-79b637289/'
+          href='https://www.linkedin.com/in/mohammed-ali-maaz-705b61289/'
           target='_black'
         >
           <AiFillLinkedin className='footer__social' />
         </a>
-        <a
-          href='https://twitter.com/MMaaz27731?t=ll3Ksdp1RiUiVpldr8RlJg&s=08'
-          target='_black'
-        >
+        <a href='https://twitter.com/Maaz2907' target='_black'>
           <AiFillTwitterSquare className='footer__social' />
         </a>
         <a href='https://github.com/mdAliMaaz' target='_black'>
