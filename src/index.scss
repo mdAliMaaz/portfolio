@@ -3,11 +3,11 @@
 
 
 :root {
-  --text: hsl(153, 82%, 2%);
-  --background: hsl(158, 87%, 94%);
-  --primary: hsl(157, 87%, 64%);
-  --secondary: hsl(157, 87%, 94%);
-  --accent: hsl(157, 87%, 24%);
+  --text: #00010a;
+  --background: #cdd5ee;
+  --primary: #f5d905;
+  --secondary: #c3cafe;
+  --accent: #f0d405;
   --transparent: hsl(157, 87%, 64%);
 
   --container-width-lg: 75%;
@@ -19,11 +19,11 @@
 
 
 [data-theme="dark"] {
-  --text: hsl(158, 87%, 94%);
-  --background: hsl(153, 82%, 2%);
-  --primary: hsl(157, 87%, 64%);
-  --secondary: hsl(157, 86%, 14%);
-  --accent: hsl(157, 87%, 54%);
+  --text: #f5f6ff;
+  --background: #010732;
+  --primary: #fade0a;
+  --secondary: #01083c;
+  --accent: #fadf0f;
   --transparent: transparent;
 }
 

@@ -3,6 +3,7 @@ import "./footer.scss";
 import { AiFillLinkedin, AiFillTwitterSquare } from "react-icons/ai";
 
 import { FaGithubSquare } from "react-icons/fa";
+import { FaHashnode } from "react-icons/fa6";
 
 import { motion } from "framer-motion";
 import { footerVariants } from "../../motion";
@@ -37,16 +38,19 @@ const Footer = () => {
       </ul>
       <div className='footer__details'>
         <a
-          href='https://www.linkedin.com/in/mohammed-ali-maaz-705b61289/'
+          href='https://www.linkedin.com/in/mohammed-ali-maaz-26962828b/'
           target='_black'
         >
           <AiFillLinkedin className='footer__social' />
         </a>
-        <a href='https://twitter.com/Maaz2907' target='_black'>
+        <a href='https://twitter.com/MdMaaz2907' target='_black'>
           <AiFillTwitterSquare className='footer__social' />
         </a>
         <a href='https://github.com/mdAliMaaz' target='_black'>
           <FaGithubSquare className='footer__social' />
+        </a>
+        <a href='https://maaz-blogs.hashnode.dev/' target='_black'>
+          <FaHashnode className='footer__social' />
         </a>
       </div>
     </motion.footer>
