@@ -3,12 +3,12 @@
 
 
 :root {
-  --text: #00010a;
-  --background: #cdd5ee;
-  --primary: #f5d905;
-  --secondary: #c3cafe;
-  --accent: #f0d405;
-  --transparent: hsl(157, 87%, 64%);
+  --text: #02242c;
+  --background: #dcf8fe;
+  --primary: #80e3fa;
+  --secondary: #b6f0fc;
+  --accent: #09b6dc;
+  --transparent: transparent;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -19,11 +19,11 @@
 
 
 [data-theme="dark"] {
-  --text: #f5f6ff;
-  --background: #010732;
-  --primary: #fade0a;
-  --secondary: #01083c;
-  --accent: #fadf0f;
+  --text: #f6fefb;
+  --background: #042a1e;
+  --primary: #3aeeb5;
+  --secondary: #053d2b;
+  --accent: #22ecac;
   --transparent: transparent;
 }
 
@@ -102,10 +102,10 @@ section {
 }
 
 a {
-  color: var(--primary);
+  color: var(--text);
 
   &:hover {
-    color: var(--accent);
+    color: var(--secondary);
   }
 }
 
@@ -113,7 +113,8 @@ a {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--primary);
+  color: var(--text);
+  background-color: var(--secondary);
   padding: .75rem 1.2rem;
   border-radius: .4rem;
   cursor: pointer;
@@ -121,8 +122,8 @@ a {
   transition: var(--transition);
 
   &:hover {
-    background-color: var(--background);
-    color: var(--accent);
+    background-color: var(--primary);
+    color: var(--text);
     border-color: transparent;
   }
 }
@@ -130,8 +131,8 @@ a {
 
 
 .btn-primary {
-  background-color: var(--primary);
-  color: var(--background);
+  background-color: var(--accent);
+  color: var(--text);
 }
 
 img {

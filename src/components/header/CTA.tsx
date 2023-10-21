@@ -8,7 +8,7 @@ const CTA = () => {
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 1, repeat: Infinity }}
         viewport={{ once: false }}
-        href='/resume.pdf'
+        href='/Resume(Dark).pdf'
         download
         className='btn'
       >
